@@ -114,9 +114,7 @@ body {
     margin-right: auto;
     text-align: center;
 }
-.offert-haircut{
-    
-}
+
 .offert-haircut-topic{
     height:48px;
     width:40%;
@@ -151,4 +149,13 @@ body {
     background-image: url("img/oferta-zdj-all.png");
     height:620px;
     width: 52%;
+}
+/*------ shaving styles ------*/
+/* page border */
+.border-strip{
+    background-color: rgb(207, 162, 138);
+    height:100px;
+    display:flex;
+    align-content: center;
+    justify-content: center;
 }
