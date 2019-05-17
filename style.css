@@ -56,7 +56,9 @@ body {
 
 .nav ul li a:hover{
     text-decoration-color: rgb(207, 162, 138);
-    
+}
+.nav ul li a:visited {
+    text-decoration-color: rgb(207, 162, 138);
 }
 
 .logo {
@@ -93,4 +95,60 @@ body {
     text-align: justify;
     padding-bottom:3vw;
 }
-
+/* offert styles */
+.topic{
+    display: block;
+    text-decoration-color: rgb(207, 162, 138);
+}
+.offer{
+    height:750px;
+    background-image: url("img/logo-background-left.png");
+    background-repeat: no-repeat;
+}
+.offer-topic {
+    padding-top:3vw;
+    font-size:2.5em;
+    width:200px;
+    border-bottom: 3px solid rgb(207, 162, 138);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.offert-haircut{
+    
+}
+.offert-haircut-topic{
+    height:48px;
+    width:40%;
+    border-bottom: 3px solid rgb(207, 162, 138);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top:50px;
+}
+.haircut-list{
+    list-style-type: none;
+    margin:30px;
+}
+.haircut-list li:before{
+    content:'';
+    position: absolute;
+    width:8px;
+    height:8px;
+    border-radius:100%;
+    background-color: rgb(207, 162, 138);
+    top:45%;
+    left:2%;
+}
+.haircut-list li{
+    position: relative;
+    padding: 30px;
+    font-size:1.2em;
+    padding-left:40px;
+    text-align: center;
+}
+.offert-haircut-img{
+    background-image: url("img/oferta-zdj-all.png");
+    height:620px;
+    width: 52%;
+}
