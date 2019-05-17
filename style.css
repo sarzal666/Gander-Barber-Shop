@@ -2,35 +2,95 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: 'Noto Serif', serif;
-    font-size:20px;
+    font-size: 20px;
 }
-.first-info
-{
+
+.first-info {
     margin-top: 0.5em;
-    margin-bottom: 0.5em;
 }
+
 .social-media {
     display: flex;
     justify-content: center;
 }
-.social-media img{
+
+.social-media img {
     margin-left: 0.5em;
     margin-right: 0.5em;
 }
-.address{
-    font-size: 1.1em;
+
+.address {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-content: center;
+    padding-left:20px;
 }
-.phone
-{
-    font-size: 1.3em;
+
+.phone {
+    font-size: 1.2em;
     display: flex;
     justify-content: center;
 }
-.line
-{
-    height:2px;
-    background-color:rgb(207,162,138);
+
+.line {
+    height: 2px;
+    background-color: rgb(207, 162, 138);
 }
+
+/* nav and logo */
+
+.nav ul {
+    list-style-type: none;
+}
+
+.nav ul li {
+    display: inline-block;
+    font-size: 1.3em;
+    color: black;
+    margin-left:3vw;
+    margin-right:3vw;
+}
+.nav ul li a{
+    color:black;
+}
+
+.nav ul li a:hover{
+    text-decoration-color: rgb(207, 162, 138);
+    
+}
+
+.logo {
+    position: absolute;
+    left: 43vw;
+    top: 60px;
+}
+
+.left-nav-content {
+    padding-right:3vw;
+}
+.left-nav{
+    display: flex;
+    justify-content: center;
+    margin-top:6vw;
+}
+.right-nav {
+    display: flex;
+    justify-content: center;
+    margin-top:6vw;
+}
+.slider{
+    display: flex;
+    align-items: flex-end;
+    background-image: url("img/slider-zdj-4.png");
+    height:35vw;
+}
+.slider-text{
+    color:white;
+    text-shadow: 5px black;
+    font-weight: bold;
+    font-size:1.2em;
+    width:40%;
+    text-align: justify;
+    padding-bottom:3vw;
+}
+
