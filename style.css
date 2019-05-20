@@ -184,7 +184,7 @@ body {
     position: relative;
     padding: 30px;
     font-size: 1.2em;
-    
+
 }
 
 .shaving-list li:before {
@@ -223,15 +223,79 @@ body {
     border-bottom: 3px solid rgb(207, 162, 138);
     margin-left: auto;
     margin-right: auto;
-    display:flex;
+    display: flex;
     justify-content: center;
-    align-items:center;
-    margin-top:15vh;
+    align-items: center;
+    margin-top: 15vh;
 }
-.shaving-text{
+
+.shaving-text {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    height:100vh;
+    height: 100vh;
     justify-content: center;
+}
+
+/* dyeing beards styles */
+.dyeing-beards {
+    background-image: url("img/logo-background-left.png");
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.dyeing-topic {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.dyeing-position {
+    display: flex;
+    justify-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.dyeing-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.dyeing-topic-header {
+    border-bottom: 3px solid rgb(207, 162, 138);
+}
+
+.dyeing-topic-header h2 {
+    font-size: 3em;
+    text-align: center;
+}
+/* cosmetics styles */
+.cosmetics{
+    height: 100vh;
+}
+.cosmetics-topic{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cosmetics-topic-header{
+    border-bottom: 3px solid rgb(207, 162, 138);
+    text-align: center;
+}
+.cosmetics-topic-header h2{
+    font-size:3em;
+}
+.cosmetics-position{
+    height:100%;
+    display: flex;
+    align-items:center;
+    flex-wrap: wrap;
 }
