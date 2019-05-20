@@ -23,7 +23,7 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
-    padding-left:20px;
+    padding-left: 20px;
 }
 
 .phone {
@@ -47,16 +47,18 @@ body {
     display: inline-block;
     font-size: 1.3em;
     color: black;
-    margin-left:3vw;
-    margin-right:3vw;
-}
-.nav ul li a{
-    color:black;
+    margin-left: 3vw;
+    margin-right: 3vw;
 }
 
-.nav ul li a:hover{
+.nav ul li a {
+    color: black;
+}
+
+.nav ul li a:hover {
     text-decoration-color: rgb(207, 162, 138);
 }
+
 .nav ul li a:visited {
     text-decoration-color: rgb(207, 162, 138);
 }
@@ -68,94 +70,168 @@ body {
 }
 
 .left-nav-content {
-    padding-right:3vw;
+    padding-right: 3vw;
 }
-.left-nav{
+
+.left-nav {
     display: flex;
     justify-content: center;
-    margin-top:6vw;
+    margin-top: 6vw;
 }
+
 .right-nav {
     display: flex;
     justify-content: center;
-    margin-top:6vw;
+    margin-top: 6vw;
 }
-.slider{
+
+.slider {
     display: flex;
     align-items: flex-end;
     background-image: url("img/slider-zdj-4.png");
-    height:35vw;
+    height: 35vw;
 }
-.slider-text{
-    color:white;
+
+.slider-text {
+    color: white;
     text-shadow: 5px black;
     font-weight: bold;
-    font-size:1.2em;
-    width:40%;
+    font-size: 1.2em;
+    width: 40%;
     text-align: justify;
-    padding-bottom:3vw;
+    padding-bottom: 3vw;
 }
+
 /* offert styles */
-.topic{
+.topic {
     display: block;
     text-decoration-color: rgb(207, 162, 138);
 }
-.offer{
-    height:750px;
+
+.offer {
+    height: 100vh;
     background-image: url("img/logo-background-left.png");
     background-repeat: no-repeat;
 }
+
 .offer-topic {
-    padding-top:3vw;
-    font-size:2.5em;
-    width:200px;
+    padding-top: 2vw;
+    font-size: 2.5em;
+    width: 200px;
     border-bottom: 3px solid rgb(207, 162, 138);
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
 
-.offert-haircut-topic{
-    height:48px;
-    width:40%;
+.offert-haircut-topic {
+    height: 48px;
+    width: 40%;
     border-bottom: 3px solid rgb(207, 162, 138);
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    margin-top:50px;
+    margin-top: 50px;
 }
-.haircut-list{
+
+.haircut-list {
     list-style-type: none;
-    margin:30px;
+    margin: 30px;
 }
-.haircut-list li:before{
-    content:'';
+
+.haircut-list li:before {
+    content: '';
     position: absolute;
-    width:8px;
-    height:8px;
-    border-radius:100%;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
     background-color: rgb(207, 162, 138);
-    top:45%;
-    left:2%;
+    top: 45%;
+    left: 2%;
 }
-.haircut-list li{
+
+.haircut-list li {
     position: relative;
     padding: 30px;
-    font-size:1.2em;
-    padding-left:40px;
+    font-size: 1.2em;
+    padding-left: 40px;
     text-align: center;
 }
-.offert-haircut-img{
+
+.offert-haircut-img {
     background-image: url("img/oferta-zdj-all.png");
-    height:620px;
+    height: 620px;
     width: 52%;
 }
+
 /*------ shaving styles ------*/
 /* page border */
-.border-strip{
+.border-strip {
     background-color: rgb(207, 162, 138);
-    height:100px;
-    display:flex;
+    height: 100px;
+    width: 100%;
+    display: flex;
     align-content: center;
+    justify-content: center;
+}
+
+.shaving-list {
+    list-style-type: none;
+    margin: 30px;
+}
+
+.shaving-list li {
+    position: relative;
+    padding: 30px;
+    font-size: 1.2em;
+    
+}
+
+.shaving-list li:before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: rgb(207, 162, 138);
+    top: 45%;
+    left: 1%;
+}
+
+.offer-shaving {
+    height: 100vh;
+    background-image: url("img/logo-background-right.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.offer-shaving-img {
+    max-width: 90%;
+    height: auto;
+}
+
+.shaving-gallery {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shaving-topic {
+    height: 48px;
+    width: 30%;
+    border-bottom: 3px solid rgb(207, 162, 138);
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin-top:15vh;
+}
+.shaving-text{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height:100vh;
     justify-content: center;
 }
