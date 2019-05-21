@@ -328,66 +328,95 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
 /* about us styles */
 .about-us {
     height: 100vh;
     display: flex;
     align-items: center;
 }
-.opinions{
-    height:100%;
+
+.opinions {
+    height: 100%;
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
-.opinion-position{
-    height:90%;
+
+.opinion-position {
+    height: 90%;
 }
-.opinion-header{
+
+.opinion-header {
     border-bottom: 3px solid rgb(207, 162, 138);
     text-align: center;
     width: 50%;
 }
-.opinion-left-header{
-    margin-bottom:4vh;
+
+.opinion-left-header {
+    margin-bottom: 4vh;
 }
-.border-vertical{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100%;
+
+.border-vertical {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
-.border{
-    width:4px;
-    height:100%;
+
+.border {
+    width: 4px;
+    height: 100%;
     background-color: rgb(207, 162, 138);
 }
-.realization{
-    height:100%;
+
+.realization {
+    height: 100%;
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
-.opinion{
-    text-align:center;
+
+.opinion {
+    text-align: center;
 }
-.opinion-border{
-        border-bottom: 3px solid rgb(207, 162, 138);
-        margin-bottom:4vh;
+
+.opinion-border {
+    border-bottom: 3px solid rgb(207, 162, 138);
+    margin-bottom: 4vh;
 }
-.client{
-    text-align:right;
+
+.client {
+    text-align: right;
 }
-.realization-img{
-    max-width:100%;
-    height:auto;
+
+.realization-img {
+    max-width: 100%;
+    height: auto;
 }
-.bottom{
+
+.bottom {
     margin-bottom: 11vh;
 }
+
 /* contact styles */
-.contact{
-    height:100vh;
+.contact {
+    height: 100vh;
+}
+.contact-position{
+    height:90%;
+}
+.map{
+    display:flex;
+    align-items-center;
+    justify-content:center;
+}
+
+
+.creator{
+    background-color: rgb(207, 162, 138);
+    text-align:center;
+    font-size:0.8em;
 }
