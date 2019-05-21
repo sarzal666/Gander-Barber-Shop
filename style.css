@@ -274,11 +274,13 @@ body {
     font-size: 3em;
     text-align: center;
 }
+
 /* cosmetics styles */
-.cosmetics{
+.cosmetics {
     height: 100vh;
 }
-.cosmetics-topic{
+
+.cosmetics-topic {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -286,16 +288,106 @@ body {
     justify-content: center;
     align-items: center;
 }
-.cosmetics-topic-header{
+
+.cosmetics-topic-header {
     border-bottom: 3px solid rgb(207, 162, 138);
     text-align: center;
 }
-.cosmetics-topic-header h2{
-    font-size:3em;
+
+.cosmetics-topic-header h2 {
+    font-size: 3em;
 }
-.cosmetics-position{
+
+.cosmetics-position {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cosmetics-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: justify;
+}
+
+.cosmetics-title {
+    border-bottom: 3px solid rgb(207, 162, 138);
+    text-align: center;
+    width: 50%;
+    margin-bottom: 4vh;
+}
+
+.coast {
+    background: rgb(207, 162, 138);
+    text-align: center;
+    color: white;
+    width: calc(40px + 6vw);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* about us styles */
+.about-us {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.opinions{
     height:100%;
     display: flex;
     align-items:center;
+    justify-content: center;
     flex-wrap: wrap;
+}
+.opinion-position{
+    height:90%;
+}
+.opinion-header{
+    border-bottom: 3px solid rgb(207, 162, 138);
+    text-align: center;
+    width: 50%;
+}
+.opinion-left-header{
+    margin-bottom:4vh;
+}
+.border-vertical{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+}
+.border{
+    width:4px;
+    height:100%;
+    background-color: rgb(207, 162, 138);
+}
+.realization{
+    height:100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+.opinion{
+    text-align:center;
+}
+.opinion-border{
+        border-bottom: 3px solid rgb(207, 162, 138);
+        margin-bottom:4vh;
+}
+.client{
+    text-align:right;
+}
+.realization-img{
+    max-width:100%;
+    height:auto;
+}
+.bottom{
+    margin-bottom: 11vh;
+}
+/* contact styles */
+.contact{
+    height:100vh;
 }
