@@ -405,18 +405,91 @@ body {
 .contact {
     height: 100vh;
 }
-.contact-position{
-    height:90%;
+
+.contact-position {
+    height: 96%;
 }
-.map{
-    display:flex;
-    align-items-center;
-    justify-content:center;
+
+.map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height:100%;
+}
+
+.map-and-form {
+    height: 65%;
 }
 
 
-.creator{
+.creator {
     background-color: rgb(207, 162, 138);
-    text-align:center;
-    font-size:0.8em;
+    text-align: center;
+    font-size: 0.8em;
+    height: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.creator p {
+    margin: 0;
+}
+
+.form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form-control {
+    margin: 15px;
+}
+
+.form-topic-block {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid rgb(207, 162, 138);
+}
+
+.border-horizontal {
+    background-color: 3px solid rgb(207, 162, 138);
+    height: 5px;
+}
+
+.data-topics {
+    display: flex;
+    justify-content: center;
+}
+
+.barber-address {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.barber-hours {
+    border-left: 3px solid rgb(207, 162, 138);
+    border-right: 3px solid rgb(207, 162, 138);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.colabo {
+    display: flex;
+    justify-content: center;
+
+}
+
+.colabo img {
+    max-width: 50%;
+    height: auto;
 }

@@ -1,0 +1,178 @@
+<div id="googlemap"></div>
+
+<script>
+var map;
+
+function initMap() {
+    var mapCenter = {lat: 52.434558984170586, lng: 20.665252390460182};
+    map = new google.maps.Map(document.getElementById('googlemap'), {
+      zoom: 16,
+      center: mapCenter,
+      disableDefaultUI: true,
+      styles: [
+                {
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "hue": "#ff4400"
+                        },
+                        {
+                            "saturation": -68
+                        },
+                        {
+                            "lightness": -4
+                        },
+                        {
+                            "gamma": 0.72
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "labels.icon"
+                },
+                {
+                    "featureType": "landscape.man_made",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "hue": "#0077ff"
+                        },
+                        {
+                            "gamma": 3.1
+                        }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "stylers": [
+                        {
+                            "hue": "#00ccff"
+                        },
+                        {
+                            "gamma": 0.44
+                        },
+                        {
+                            "saturation": -33
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.park",
+                    "stylers": [
+                        {
+                            "hue": "#44ff00"
+                        },
+                        {
+                            "saturation": -23
+                        }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "hue": "#007fff"
+                        },
+                        {
+                            "gamma": 0.77
+                        },
+                        {
+                            "saturation": 65
+                        },
+                        {
+                            "lightness": 99
+                        }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "labels.text.stroke",
+                    "stylers": [
+                        {
+                            "gamma": 0.11
+                        },
+                        {
+                            "weight": 5.6
+                        },
+                        {
+                            "saturation": 99
+                        },
+                        {
+                            "hue": "#0091ff"
+                        },
+                        {
+                            "lightness": -86
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit.line",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "lightness": -48
+                        },
+                        {
+                            "hue": "#ff5e00"
+                        },
+                        {
+                            "gamma": 1.2
+                        },
+                        {
+                            "saturation": -23
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit",
+                    "elementType": "labels.text.stroke",
+                    "stylers": [
+                        {
+                            "saturation": -64
+                        },
+                        {
+                            "hue": "#ff9100"
+                        },
+                        {
+                            "lightness": 16
+                        },
+                        {
+                            "gamma": 0.47
+                        },
+                        {
+                            "weight": 2.7
+                        }
+                    ]
+                }
+            ]
+                    });
+
+                    var locationMarkers = [];
+
+                    function addLocationMarker(name, lat, lng, status) {
+
+                        var name_coordinates = {lat: lat, lng: lng};
+
+                        window[name] = new google.maps.Marker({
+                          position: name_coordinates,
+                          icon: "/wp-content/themes/starter_theme/images/pin.svg",
+                          // Animation: google.maps.Animation.BOUNCE,
+                          map: map
+                        });
+
+                        locationMarkers.push(window[name]);
+
+                    };
+
+                    // znacznik
+                    addLocationMarker('nazwa_znacznika',52.4336025, 20.667376699999977);
+                }
+</script>
+
+
+<!-- Google Map -->
+<script async defer
+ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVQTfe6AiAzWWUgWKaksTZiYKo4E6u05g&callback=initMap">
+</script>
