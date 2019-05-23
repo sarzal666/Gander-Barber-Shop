@@ -34,7 +34,7 @@ body {
 
 .line {
     height: 2px;
-    background-color: rgb(207, 162, 138);
+    background-color: rgba(207, 162, 138, 0.8);
 }
 
 /* nav and logo */
@@ -56,11 +56,11 @@ body {
 }
 
 .nav ul li a:hover {
-    text-decoration-color: rgb(207, 162, 138);
+    text-decoration-color: rgba(207, 162, 138, 0.8);
 }
 
 .nav ul li a:visited {
-    text-decoration-color: rgb(207, 162, 138);
+    text-decoration-color: rgba(207, 162, 138, 0.8);
 }
 
 .logo {
@@ -105,20 +105,22 @@ body {
 /* offert styles */
 .topic {
     display: block;
-    text-decoration-color: rgb(207, 162, 138);
+    text-decoration-color: rgba(207, 162, 138, 0.8);
 }
 
 .offer {
     height: 100vh;
-    background-image: url("img/logo-background-left.png");
+    background-image: url("img/logo-barber-czarno-biale-krycie.png");
     background-repeat: no-repeat;
+    background-position: -50% center;
+    background-size: 55%;
 }
 
 .offer-topic {
     padding-top: 2vw;
     font-size: 2.5em;
     width: 200px;
-    border-bottom: 3px solid rgb(207, 162, 138);
+    border-bottom: 3px solid rgba(207, 162, 138, 0.8);
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -127,7 +129,7 @@ body {
 .offert-haircut-topic {
     height: 48px;
     width: 40%;
-    border-bottom: 3px solid rgb(207, 162, 138);
+    border-bottom: 3px solid rgba(207, 162, 138, 0.8);
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -145,29 +147,28 @@ body {
     width: 8px;
     height: 8px;
     border-radius: 100%;
-    background-color: rgb(207, 162, 138);
+    background-color: rgba(207, 162, 138, 0.8);
     top: 45%;
-    left: 2%;
+    left: 1%;
 }
 
 .haircut-list li {
     position: relative;
-    padding: 30px;
-    font-size: 1.2em;
-    padding-left: 40px;
+    /* padding:10px; */
+    font-size: 1.3em;
+    /* padding-left: 40px; */
     text-align: center;
 }
 
 .offert-haircut-img {
-    background-image: url("img/oferta-zdj-all.png");
-    height: 620px;
-    width: 52%;
+    max-width: 100%;
+    height: auto;
 }
 
 /*------ shaving styles ------*/
 /* page border */
 .border-strip {
-    background-color: rgb(207, 162, 138);
+    background-color: rgba(207, 162, 138, 0.8);
     height: 100px;
     width: 100%;
     display: flex;
@@ -193,7 +194,7 @@ body {
     width: 8px;
     height: 8px;
     border-radius: 100%;
-    background-color: rgb(207, 162, 138);
+    background-color: rgba(207, 162, 138, 0.8);
     top: 45%;
     left: 1%;
 }
@@ -206,7 +207,7 @@ body {
 }
 
 .offer-shaving-img {
-    max-width: 90%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -220,7 +221,7 @@ body {
 .shaving-topic {
     height: 48px;
     width: 30%;
-    border-bottom: 3px solid rgb(207, 162, 138);
+    border-bottom: 3px solid rgba(207, 162, 138, 0.8);
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -267,7 +268,7 @@ body {
 }
 
 .dyeing-topic-header {
-    border-bottom: 3px solid rgb(207, 162, 138);
+    border-bottom: 3px solid rgba(207, 162, 138, 0.8);
 }
 
 .dyeing-topic-header h2 {
@@ -290,7 +291,7 @@ body {
 }
 
 .cosmetics-topic-header {
-    border-bottom: 3px solid rgb(207, 162, 138);
+    border-bottom: 3px solid rgba(207, 162, 138, 0.8);
     text-align: center;
 }
 
@@ -314,14 +315,14 @@ body {
 }
 
 .cosmetics-title {
-    border-bottom: 3px solid rgb(207, 162, 138);
+    border-bottom: 3px solid rgba(207, 162, 138, 0.8);
     text-align: center;
     width: 50%;
     margin-bottom: 4vh;
 }
 
 .coast {
-    background: rgb(207, 162, 138);
+    background: rgba(207, 162, 138, 0.8);
     text-align: center;
     color: white;
     width: calc(40px + 6vw);
@@ -349,7 +350,7 @@ body {
 }
 
 .opinion-header {
-    border-bottom: 3px solid rgb(207, 162, 138);
+    border-bottom: 3px solid rgba(207, 162, 138, 0.6);
     text-align: center;
     width: 50%;
 }
@@ -368,7 +369,7 @@ body {
 .border {
     width: 4px;
     height: 100%;
-    background-color: rgb(207, 162, 138);
+    background-color: rgba(207, 162, 138, 0.8);
 }
 
 .realization {
@@ -384,7 +385,8 @@ body {
 }
 
 .opinion-border {
-    border-bottom: 3px solid rgb(207, 162, 138);
+    border-bottom: 3px solid rgba(207, 162, 138, 0.8);
+    ;
     margin-bottom: 4vh;
 }
 
@@ -415,7 +417,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 50%;
-    height:100%;
+    height: 100%;
 }
 
 .map-and-form {
@@ -450,46 +452,65 @@ body {
 }
 
 .form-topic-block {
-    width: 40%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 3px solid rgb(207, 162, 138);
+    border-bottom: 3px solid rgba(207, 162, 138, 0.8);
 }
 
 .border-horizontal {
-    background-color: 3px solid rgb(207, 162, 138);
+    background-color: rgba(207, 162, 138, 0.8);
     height: 5px;
 }
-
-.data-topics {
-    display: flex;
-    justify-content: center;
+.contact-data{
+    height: calc(100% - 65% - 5px - 4%);
 }
-
 .barber-address {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     height: 100%;
+    text-align:center;
 }
 
 .barber-hours {
-    border-left: 3px solid rgb(207, 162, 138);
-    border-right: 3px solid rgb(207, 162, 138);
+
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
+    height: 100%;
+    text-align:center;
 }
 
 .colabo {
-    display: flex;
-    justify-content: center;
-
+    height: 100%;
+    text-align:center;
 }
 
 .colabo img {
     max-width: 50%;
     height: auto;
+    margin:10px;
+}
+
+@media screen and (max-width:1199px) {}
+
+@media screen and (max-width:991px) {
+    .offer{
+        background-size:65%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .haircut-list{
+        margin:10px;
+    }
+    .haircut-list li{
+        font-size:1em;
+    }
+    .offer{
+        background-size:90%;
+        background-position: -120% center;
+    }
 }
