@@ -5,8 +5,8 @@
         // ---------------- Main slider ----------------
 		 $('.cosmetics-offer').slick({
 			 autoplay: true,
-			 autoplaySpeed: 2000,
-			 arrows: true, 
+			 autoplaySpeed: 1500,
+			 arrows: true,
 			dots: false,
 		 	infinite: true,
 		 	speed: 300,

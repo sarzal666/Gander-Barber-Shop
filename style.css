@@ -47,16 +47,23 @@ body {
     display: inline-block;
     font-size: 1.3em;
     color: black;
-    margin-left: 3vw;
-    margin-right: 3vw;
+    margin: 0 3vw 0 3vw;
 }
 
 .nav ul li a {
     color: black;
+    background-color: rgba(255, 255, 255, 0);
+    text-shadow: #444444;
+    transition: text-shadow 0.6s,
+        font-size 0.6s;
+
 }
 
 .nav ul li a:hover {
     text-decoration-color: rgba(207, 162, 138, 0.8);
+    text-shadow: 0 0 10px #FFFFFF;
+    font-size: 1.5em;
+    text-decoration: none;
 }
 
 .nav ul li a:visited {
@@ -85,6 +92,10 @@ body {
     margin-top: 6vw;
 }
 
+.nav-style {}
+
+.nav-style:hover {}
+
 .slider {
     display: flex;
     align-items: flex-end;
@@ -94,12 +105,19 @@ body {
 
 .slider-text {
     color: white;
-    text-shadow: 5px black;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 2.3em;
     width: 40%;
-    text-align: justify;
-    padding-bottom: 3vw;
+    text-align: center;
+    margin-bottom: 3vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: width 1s;
+    /* transition: text-shadow 1s; */
+}
+
+.slider-text:hover {
+    width: 50%;
+    text-shadow: 0 0 10px #FFFFFF;
 }
 
 /* offert styles */
@@ -133,8 +151,9 @@ body {
     text-align: center;
     margin-top: 50px;
 }
-.offert-haircut{
-    height:100%;
+
+.offert-haircut {
+    height: 100%;
 }
 
 .haircut-list {
@@ -168,6 +187,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: max-width 0.5s;
 }
 
 /*------ shaving styles ------*/
@@ -209,7 +229,7 @@ body {
     background-image: url("img/logo-background-right.png");
     background-repeat: no-repeat;
     background-position: right;
-    padding:20px 0 20px 0;
+    padding: 20px 0 20px 0;
 }
 
 
@@ -219,9 +239,10 @@ body {
     justify-content: center;
     align-items: center;
 }
-.shaving-gallery img{
-        max-width: 90%;
-        height: auto;
+
+.shaving-gallery img {
+    max-width: 90%;
+    height: auto;
 }
 
 .shaving-topic {
@@ -241,7 +262,7 @@ body {
     background-image: url("img/logo-background-left.png");
     background-repeat: no-repeat;
     background-position: center left;
-    padding:20px 0 20px 0;
+    padding: 20px 0 20px 0;
 }
 
 .dyeing-topic {
@@ -250,14 +271,19 @@ body {
     align-items: center;
     padding: 0 0 10px;
 }
-.underline{
-border-bottom: 3px solid rgba(207, 162, 138, 0.8);
+
+.underline {
+    border-bottom: 3px solid rgba(207, 162, 138, 0.8);
 }
 
+.dyeing-photo {
+    margin: 20px 0 20px;
+}
 
 .dyeing-img {
     max-width: 100%;
     height: auto;
+    box-shadow: 5px 5px 15px 5px #000000;
 }
 
 
@@ -268,12 +294,12 @@ border-bottom: 3px solid rgba(207, 162, 138, 0.8);
 
 /* cosmetics styles */
 .cosmetics-offer {
-    padding:0 0 20px;
+    padding: 0 0 20px;
 }
 
 .cosmetics-topic {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 }
 
@@ -291,7 +317,7 @@ border-bottom: 3px solid rgba(207, 162, 138, 0.8);
 }
 
 .cosmetics-block {
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -309,14 +335,14 @@ border-bottom: 3px solid rgba(207, 162, 138, 0.8);
     background: rgba(207, 162, 138, 0.8);
     text-align: center;
     color: white;
-    width: calc(40px + 6vw);
+    width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 /* about us styles */
 .about-us {
-    
+
     display: flex;
     align-items: center;
 }
@@ -328,24 +354,29 @@ border-bottom: 3px solid rgba(207, 162, 138, 0.8);
     justify-content: center;
     flex-wrap: wrap;
 }
-.cosmetics-arrows{
-    position:absolute;
-    top:50%;
-    transform:translateY(-50%);
-    font-size:70px;
+
+.cosmetics-arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 70px;
     opacity: 0.5;
     transition: opacity 0.5s;
     cursor: pointer;
 }
-.cosmetics-arrow-right{
-    right:5px;
+
+.cosmetics-arrow-right {
+    right: 5px;
 }
-.cosmetics-arrow-left{
+
+.cosmetics-arrow-left {
     left: 5px;
 }
-.cosmetics-arrow-left:hover{
-    opacity:1;
+
+.cosmetics-arrow-left:hover {
+    opacity: 1;
 }
+
 .cosmetics-arrow-right:hover {
     opacity: 1;
 }
@@ -354,7 +385,7 @@ border-bottom: 3px solid rgba(207, 162, 138, 0.8);
 .opinion-header {
     border-bottom: 3px solid rgba(207, 162, 138, 0.6);
     text-align: center;
-    margin:0 0 10px;
+    margin: 0 0 10px;
 }
 
 .opinion-left-header {
@@ -365,8 +396,8 @@ border-bottom: 3px solid rgba(207, 162, 138, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
-    height:510px;
-    margin:20px 0 20px 0;
+    height: 510px;
+    margin: 20px 0 20px 0;
 }
 
 .border {
@@ -400,7 +431,8 @@ border-bottom: 3px solid rgba(207, 162, 138, 0.8);
 .realization-img {
     max-width: 100%;
     height: auto;
-    margin:10px 0 10px 0;
+    margin: 10px 0 10px 0;
+    box-shadow: 5px 5px 15px 5px #000000;
 }
 
 
@@ -413,8 +445,9 @@ border-bottom: 3px solid rgba(207, 162, 138, 0.8);
 
 .map {
     height: 400px;
-    margin-top:23px;
-    margin-bottom:23px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+    box-shadow: 5px 5px 15px 5px #000000;
 }
 
 .creator {
@@ -433,7 +466,7 @@ border-bottom: 3px solid rgba(207, 162, 138, 0.8);
 
 .form {
     width: 50%;
-    height:95%;
+    height: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -443,8 +476,9 @@ border-bottom: 3px solid rgba(207, 162, 138, 0.8);
 .form-control {
     margin: 15px;
 }
-.form-topic{
-    padding-bottom:10px;
+
+.form-topic {
+    padding-bottom: 10px;
     border-bottom: 3px solid rgba(207, 162, 138, 0.8);
 }
 
@@ -460,15 +494,17 @@ border-bottom: 3px solid rgba(207, 162, 138, 0.8);
     background-color: rgba(207, 162, 138, 0.8);
     height: 5px;
 }
-.contact-data{
+
+.contact-data {
     height: calc(100% - 65% - 5px - 4%);
 }
+
 .barber-address {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     height: 100%;
-    text-align:center;
+    text-align: center;
 }
 
 .barber-hours {
@@ -477,76 +513,81 @@ border-bottom: 3px solid rgba(207, 162, 138, 0.8);
     justify-content: center;
     flex-wrap: wrap;
     height: 100%;
-    text-align:center;
+    text-align: center;
 }
 
 .colabo {
     height: 100%;
-    text-align:center;
+    text-align: center;
 }
 
 .colabo img {
     max-width: 50%;
     height: auto;
-    margin:10px;
+    margin: 10px;
 }
-.textarea{
-    resize:none;
-    width:100%;
-    max-height:200px;
+
+.textarea {
+    resize: none;
+    width: 100%;
+    max-height: 200px;
 }
-.price{
+
+.price {
     color: #444444;
     background: #FFFFFF;
     text-shadow: 1px 0px 1px #CCCCCC,
-    0px 1px 1px #EEEEEE,
-    2px 1px 1px #CCCCCC,
-    1px 2px 1px #EEEEEE,
-    3px 2px 1px #CCCCCC,
-    2px 3px 1px #EEEEEE,
-    4px 3px 1px #CCCCCC,
-    3px 4px 1px #EEEEEE,
-    5px 4px 1px #CCCCCC,
-    4px 5px 1px #EEEEEE,
-    6px 5px 1px #CCCCCC,
-    5px 6px 1px #EEEEEE,
-    7px 6px 1px #CCCCCC;
+        0px 1px 1px #EEEEEE,
+        2px 1px 1px #CCCCCC,
+        1px 2px 1px #EEEEEE,
+        3px 2px 1px #CCCCCC,
+        2px 3px 1px #EEEEEE,
+        4px 3px 1px #CCCCCC,
+        3px 4px 1px #EEEEEE,
+        5px 4px 1px #CCCCCC,
+        4px 5px 1px #EEEEEE,
+        6px 5px 1px #CCCCCC,
+        5px 6px 1px #EEEEEE,
+        7px 6px 1px #CCCCCC;
 }
-.golenie{
+
+.golenie {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.strzyzenie{
-    display:flex;
+
+
+.button {
+    display: flex;
     justify-content: center;
-    align-items:center;
 }
 
-.button{
-    display:flex;
-    justify-content: center;
+.form-group input {
+    width: 100%;
 }
-.form-group input{
-    width:100%;
-}
-.form-control{
+
+.form-control {
     margin: 20px 0 20px 0;
 }
+
 @media screen and (max-width:1199px) {
-    .offert-haircut-img img{
-        max-width:90%;
+    .offert-haircut-img img {
+        max-width: 90%;
     }
-    .dyeing-text{
+
+    .dyeing-text {
         text-align: center;
     }
-    .dyeing-photo{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+
+    .dyeing-photo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .border-vertical{
-        height:570px;
+
+    .dy .border-vertical {
+        height: 570px;
     }
 }
 
@@ -555,50 +596,73 @@ border-bottom: 3px solid rgba(207, 162, 138, 0.8);
     .shaving-topic {
         margin-top: 7vh;
     }
+
     .shaving-gallery img {
         max-width: 80%;
         height: auto;
     }
-    .shaving-list{
-        margin:0;
+
+    .shaving-list {
+        margin: 0;
     }
-    .offert-haircut-img{
+
+    .offert-haircut-img {
         margin-top: 100px;
     }
-    .dyeing-img{
-        max-width:80% ;
+
+    .dyeing-img {
+        max-width: 80%;
     }
 }
 
 @media screen and (max-width:767px) {
-    .haircut-list{
-        margin:10px;
+    .haircut-list {
+        margin: 10px;
     }
-    .haircut-list li{
-        font-size:1em;
+
+    .haircut-list li {
+        font-size: 1em;
     }
+
     .strzyzenie img {
         max-width: 60%;
+        box-shadow: 5px 5px 15px 5px #000000;
+        border-radius: 100%;
     }
-    .golenie img{
+
+    .strzyzenie {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .golenie img {
         max-width: 60%;
-}
-    .underline h2{
-        font-size:1.3em;
+        box-shadow: 5px 5px 15px 5px #000000;
+        border-radius: 50%;
     }
-    .dyeing-text{
-        font-size:0.8em;
+
+    .underline h2 {
+        font-size: 1.3em;
     }
-    .dyeing-h{
-        font-size:18px;
+
+    .dyeing-text {
+        font-size: 0.8em;
     }
-    .cosmetics-block{
-        font-size:16px;
+
+    .dyeing-h {
+        font-size: 18px;
     }
+
+    .cosmetics-block {
+        font-size: 16px;
+    }
+
     .cosmetics-topic-header h2 {
         font-size: 2.5em;
     }
-    .opinion{
-        font-size:15px;
+
+    .opinion {
+        font-size: 15px;
     }
 }
