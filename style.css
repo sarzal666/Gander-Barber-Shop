@@ -109,15 +109,13 @@ body {
 }
 
 .offer {
-    height: 100vh;
-    background-image: url("img/logo-barber-czarno-biale-krycie.png");
+    background-image: url("img/logo-background-left.png");
     background-repeat: no-repeat;
-    background-position: -50% center;
-    background-size: 55%;
+    background-position: center left;
+    padding-bottom: 20px;
 }
 
 .offer-topic {
-    padding-top: 2vw;
     font-size: 2.5em;
     width: 200px;
     border-bottom: 3px solid rgba(207, 162, 138, 0.8);
@@ -128,20 +126,24 @@ body {
 
 .offert-haircut-topic {
     height: 48px;
-    width: 40%;
+    width: 200px;
     border-bottom: 3px solid rgba(207, 162, 138, 0.8);
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     margin-top: 50px;
 }
+.offert-haircut{
+    height:100%;
+}
 
 .haircut-list {
     list-style-type: none;
     margin: 30px;
+    padding-inline-start: 0px;
 }
 
-.haircut-list li:before {
+/* .haircut-list li:before {
     content: '';
     position: absolute;
     width: 8px;
@@ -150,7 +152,7 @@ body {
     background-color: rgba(207, 162, 138, 0.8);
     top: 45%;
     left: 1%;
-}
+} */
 
 .haircut-list li {
     position: relative;
@@ -160,9 +162,12 @@ body {
     text-align: center;
 }
 
-.offert-haircut-img {
+.offert-haircut-img img {
     max-width: 100%;
     height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*------ shaving styles ------*/
@@ -179,16 +184,17 @@ body {
 .shaving-list {
     list-style-type: none;
     margin: 30px;
+    padding-inline-start: 0px;
 }
 
 .shaving-list li {
     position: relative;
-    padding: 30px;
+    padding: 10px;
     font-size: 1.2em;
-
+    text-align: center;
 }
 
-.shaving-list li:before {
+/* .shaving-list li:before {
     content: '';
     position: absolute;
     width: 8px;
@@ -197,96 +203,77 @@ body {
     background-color: rgba(207, 162, 138, 0.8);
     top: 45%;
     left: 1%;
-}
+} */
 
 .offer-shaving {
-    height: 100vh;
     background-image: url("img/logo-background-right.png");
     background-repeat: no-repeat;
     background-position: right;
+    padding:20px 0 20px 0;
 }
 
-.offer-shaving-img {
-    max-width: 100%;
-    height: auto;
-}
+
 
 .shaving-gallery {
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.shaving-gallery img{
+        max-width: 90%;
+        height: auto;
+}
 
 .shaving-topic {
     height: 48px;
-    width: 30%;
+    width: 200px;
     border-bottom: 3px solid rgba(207, 162, 138, 0.8);
     margin-left: auto;
     margin-right: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 15vh;
-}
-
-.shaving-text {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    height: 100vh;
-    justify-content: center;
+    margin-top: 10vh;
 }
 
 /* dyeing beards styles */
 .dyeing-beards {
     background-image: url("img/logo-background-left.png");
     background-repeat: no-repeat;
-    height: 100vh;
+    background-position: center left;
+    padding:20px 0 20px 0;
 }
 
 .dyeing-topic {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    padding: 0 0 10px;
+}
+.underline{
+border-bottom: 3px solid rgba(207, 162, 138, 0.8);
 }
 
-.dyeing-position {
-    display: flex;
-    justify-items: center;
-    flex-wrap: wrap;
-    height: 100%;
-}
 
 .dyeing-img {
     max-width: 100%;
     height: auto;
 }
 
-.dyeing-topic-header {
-    border-bottom: 3px solid rgba(207, 162, 138, 0.8);
-}
 
-.dyeing-topic-header h2 {
+.underline h2 {
     font-size: 3em;
     text-align: center;
 }
 
 /* cosmetics styles */
-.cosmetics {
-    height: 100vh;
+.cosmetics-offer {
+    padding:0 0 20px;
 }
 
 .cosmetics-topic {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
 }
 
@@ -300,10 +287,7 @@ body {
 }
 
 .cosmetics-position {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+
 }
 
 .cosmetics-block {
@@ -332,7 +316,7 @@ body {
 
 /* about us styles */
 .about-us {
-    height: 100vh;
+    
     display: flex;
     align-items: center;
 }
@@ -345,14 +329,12 @@ body {
     flex-wrap: wrap;
 }
 
-.opinion-position {
-    height: 90%;
-}
+
 
 .opinion-header {
     border-bottom: 3px solid rgba(207, 162, 138, 0.6);
     text-align: center;
-    width: 50%;
+    margin:0 0 10px;
 }
 
 .opinion-left-header {
@@ -363,7 +345,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height:510px;
+    margin:20px 0 20px 0;
 }
 
 .border {
@@ -397,33 +380,22 @@ body {
 .realization-img {
     max-width: 100%;
     height: auto;
+    margin:10px 0 10px 0;
 }
 
-.bottom {
-    margin-bottom: 11vh;
-}
+
 
 /* contact styles */
-.contact {
-    height: 100vh;
-}
 
 .contact-position {
     height: 96%;
 }
 
 .map {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: 100%;
+    height: 400px;
+    margin-top:23px;
+    margin-bottom:23px;
 }
-
-.map-and-form {
-    height: 65%;
-}
-
 
 .creator {
     background-color: rgb(207, 162, 138);
@@ -441,6 +413,7 @@ body {
 
 .form {
     width: 50%;
+    height:95%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -450,13 +423,17 @@ body {
 .form-control {
     margin: 15px;
 }
+.form-topic{
+    padding-bottom:10px;
+    border-bottom: 3px solid rgba(207, 162, 138, 0.8);
+}
 
 .form-topic-block {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 3px solid rgba(207, 162, 138, 0.8);
+
 }
 
 .border-horizontal {
@@ -493,12 +470,80 @@ body {
     height: auto;
     margin:10px;
 }
+.textarea{
+    resize:none;
+    width:100%;
+    max-height:200px;
+}
+.price{
+    color: #444444;
+    background: #FFFFFF;
+    text-shadow: 1px 0px 1px #CCCCCC,
+    0px 1px 1px #EEEEEE,
+    2px 1px 1px #CCCCCC,
+    1px 2px 1px #EEEEEE,
+    3px 2px 1px #CCCCCC,
+    2px 3px 1px #EEEEEE,
+    4px 3px 1px #CCCCCC,
+    3px 4px 1px #EEEEEE,
+    5px 4px 1px #CCCCCC,
+    4px 5px 1px #EEEEEE,
+    6px 5px 1px #CCCCCC,
+    5px 6px 1px #EEEEEE,
+    7px 6px 1px #CCCCCC;
+}
+.golenie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.strzyzenie{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
 
-@media screen and (max-width:1199px) {}
+.button{
+    display:flex;
+    justify-content: center;
+}
+.form-group input{
+    width:100%;
+}
+.form-control{
+    margin: 20px 0 20px 0;
+}
+@media screen and (max-width:1199px) {
+    .offert-haircut-img img{
+        max-width:90%;
+    }
+    .dyeing-text{
+        text-align: center;
+    }
+    .dyeing-photo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    }
+    .border-vertical{
+        height:570px;
+    }
+}
 
 @media screen and (max-width:991px) {
-    .offer{
-        background-size:65%;
+
+    .shaving-topic {
+        margin-top: 7vh;
+    }
+    .shaving-gallery img {
+        max-width: 80%;
+        height: auto;
+    }
+    .shaving-list{
+        margin:0;
+    }
+    .offert-haircut-img{
+        margin-top: 100px;
     }
 }
 
@@ -509,8 +554,19 @@ body {
     .haircut-list li{
         font-size:1em;
     }
-    .offer{
-        background-size:90%;
-        background-position: -120% center;
+    .strzyzenie img {
+        max-width: 60%;
+    }
+    .golenie img{
+        max-width: 60%;
+}
+    .underline h2{
+        font-size:1.3em;
+    }
+    .dyeing-text{
+        font-size:0.8em;
+    }
+    .dyeing-h{
+        font-size:18px;
     }
 }
