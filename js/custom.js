@@ -20,7 +20,8 @@
 					 breakpoint: 1024,
 					 settings: {
 						 slidesToShow: 3,
-						 slidesToScroll: 3
+						 slidesToScroll: 3,
+						 autoplaySpeed:1000
 					 }
 				 },
 				 {
@@ -45,9 +46,20 @@
         // -------------- Main slider END --------------
 
     }); //document ready
-    
+		$(document).on('click', '.nav li a[href^="#"]', function (event) {
+			event.preventDefault();
+				console.log(window.outerWidth);
+			if (window.outerWidth < 768) {
+				$('.navbar-toggle').trigger('click');
+			}
+
+			$('html, body').animate({
+				scrollTop: $($.attr(this, 'href')).offset().top - 80
+			}, 500);
+		});
+		
     $(window).on('scroll', function() {
-		// stickyNav();
+		 stickyNav();
     });
     
 

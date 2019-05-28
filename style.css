@@ -39,70 +39,85 @@ body {
 
 /* nav and logo */
 
-.nav ul {
+.nav {
     list-style-type: none;
 }
 
-.nav ul li {
+.nav li {
     display: inline-block;
     font-size: 1.3em;
     color: black;
     margin: 0 3vw 0 3vw;
 }
 
-.nav ul li a {
+.nav li a {
     color: black;
     background-color: rgba(255, 255, 255, 0);
     text-shadow: #444444;
-    transition: text-shadow 0.6s,
-        font-size 0.6s;
-
 }
 
-.nav ul li a:hover {
+.nav li a:hover {
     text-decoration-color: rgba(207, 162, 138, 0.8);
     text-shadow: 0 0 10px #FFFFFF;
-    font-size: 1.5em;
-    text-decoration: none;
 }
 
-.nav ul li a:visited {
+.nav li a:visited {
     text-decoration-color: rgba(207, 162, 138, 0.8);
 }
 
 .logo {
     position: absolute;
-    left: 43vw;
-    top: 60px;
-}
-
-.left-nav-content {
-    padding-right: 3vw;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+    z-index: 1;
 }
 
 .left-nav {
     display: flex;
-    justify-content: center;
-    margin-top: 6vw;
+    justify-content: flex-start;
+    margin-top: 70px;
+    transition:margin 0.5s;
 }
 
 .right-nav {
     display: flex;
-    justify-content: center;
-    margin-top: 6vw;
+    justify-content: flex-end;
+    margin-top: 70px;
+    transition:margin 0.5s;
 }
-
-.nav-style {}
-
-.nav-style:hover {}
 
 .slider {
-    display: flex;
-    align-items: flex-end;
-    background-image: url("img/slider-zdj-4.png");
-    height: 35vw;
+    position: relative;
+    height: 650px;
 }
-
+.slider-item{
+    height:650px;
+}
+.slider-box{
+    height:650px;
+}
+.relative{
+    position: relative;
+}
+.slider-content{
+    position: absolute;
+    left:50%;
+    transform:translate(-50%,-50%);
+    top:50%;
+}
+.img-1{
+    background-image: url("img/slider-zdj-1.png");
+    max-width: 100%;
+}
+.img-2{
+    background-image: url("img/slider-zdj-2.png");
+    max-width: 100%;
+}
+.img-3{
+    background-image: url("img/slider-zdj-3.png");
+    max-width: 100%;
+}
 .slider-text {
     color: white;
     font-weight: bold;
@@ -283,7 +298,7 @@ body {
 .dyeing-img {
     max-width: 100%;
     height: auto;
-    box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.4);
 }
 
 
@@ -420,7 +435,6 @@ body {
 
 .opinion-border {
     border-bottom: 3px solid rgba(207, 162, 138, 0.8);
-    ;
     margin-bottom: 4vh;
 }
 
@@ -431,8 +445,8 @@ body {
 .realization-img {
     max-width: 100%;
     height: auto;
-    margin: 10px 0 10px 0;
-    box-shadow: 5px 5px 15px 5px #000000;
+    margin: 15px 0 15px 0;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
 }
 
 
@@ -447,7 +461,7 @@ body {
     height: 400px;
     margin-top: 23px;
     margin-bottom: 23px;
-    box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
 }
 
 .creator {
@@ -570,6 +584,87 @@ body {
 .form-control {
     margin: 20px 0 20px 0;
 }
+/* menu */
+
+.navbar-starter-theme {
+    background: white !important;
+    transition: all .5s;
+    border-radius: 0 !important;
+    border: 0 !important;
+    margin: 0 !important;
+    /* height: 100px; */
+    /* display: flex;
+    align-items: center; */
+}
+
+/* Ustawienie logo na środku */
+.navbar-brand-no-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* Rozmiar logo na desktopach */
+.navbar-brand-no-mobile img {
+    width: 100%;
+    transition: width .5s;
+}
+
+.navbar-collapse {
+    position: relative;
+}
+
+/* Przycisk do rozwijanego menu */
+.navbar-toggle {
+    float: initial !important;
+    margin: 0 !important;
+}
+
+/* Kreseczki w przycisku */
+.navbar-toggle .icon-bar {}
+
+.navbar-header:after,
+.navbar-header:before {
+    display: initial !important;
+    content: initial !important;
+}
+
+.navbar-brand {
+    float: initial !important;
+    height: auto !important;
+    padding: 0 !important;
+
+}
+
+/* Wygląd menu kiedy jest przyklejone */
+.navbar-starter-theme.sticky {
+    width: 100%;
+    height:80px;
+    position: fixed;
+    top: 0px;
+    bottom: initial;
+    z-index: 999999;
+    background: white !important;
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+.navbar-starter-theme.sticky .left-nav{
+    margin:0;
+}
+.navbar-starter-theme.sticky .right-nav{
+    margin:0;
+}
+
+
+/* Rozmiar logo kiedy menu jest przyklejone */
+.navbar-starter-theme.sticky .navbar-brand-no-mobile img {
+    width: 60%;
+        border-radius:100%;
+        border:5px solid white;
+}
 
 @media screen and (max-width:1199px) {
     .offert-haircut-img img {
@@ -586,7 +681,7 @@ body {
         align-items: center;
     }
 
-    .dy .border-vertical {
+    .border-vertical {
         height: 570px;
     }
 }
@@ -613,6 +708,13 @@ body {
     .dyeing-img {
         max-width: 80%;
     }
+    .logo{
+        width:20%;
+    }
+    .nav li{
+        margin:0;
+        font-size: 1.2em;
+    }
 }
 
 @media screen and (max-width:767px) {
@@ -626,7 +728,7 @@ body {
 
     .strzyzenie img {
         max-width: 60%;
-        box-shadow: 5px 5px 15px 5px #000000;
+        box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
         border-radius: 100%;
     }
 
@@ -638,7 +740,7 @@ body {
 
     .golenie img {
         max-width: 60%;
-        box-shadow: 5px 5px 15px 5px #000000;
+        box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
         border-radius: 50%;
     }
 
@@ -665,4 +767,66 @@ body {
     .opinion {
         font-size: 15px;
     }
+     /* Wyrzuca padding z container'a na telefonach */
+     .navbar-starter-theme .container {
+         padding: 0 !important;
+     }
+
+     /* Pozycja menu po rozwinięciu */
+     .navbar-collapse {
+         position: absolute;
+         left: 0px;
+         width: 100%;
+         margin: 0 !important;
+         top: 100%;
+         background-color: white;
+     }
+     .left-nav{
+         margin:0;
+     }
+     .right-nav {
+         margin: 0;
+     }
+     .nav li{
+             width: 100%;
+             text-align: center;
+             border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+             margin:0;
+     }
+     .nav{
+         width:100%;
+     }
+     /* Pasek w którym znajduje się logo i przycisk do rozwijania menu */
+     .navbar-header {
+         display: flex;
+         width: 100%;
+         justify-content: space-between;
+         align-items: center;
+         padding:15px;
+     }
+
+     /* Rozmiar logo na telefonach */
+     .navbar-brand {
+         display: inline-block;
+     }
+
+     .navbar-brand img {
+         width: 80%;
+         transition: width .5s;
+     }
+
+     /* Zmiana rozmiaru loga, kiedy menu jest przyklejone */
+     .navbar-starter-theme.sticky .navbar-brand img {
+         width: 50%;
+     }
+     .navbar-collapse{
+         z-index: 9;
+        
+     }
+     .slider-text{
+         width:100%;
+     }
+     .slider-text:hover{
+         
+     }
 }

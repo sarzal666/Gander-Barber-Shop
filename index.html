@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Barber Shop Gander</title>
+    <!-- Jquery -->
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/slider.js"></script>
     <!-- bootsrtap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/slick.css">
     <script src="js/slick.min.js"></script>
     <!-- main css -->
@@ -17,55 +20,89 @@
     <script src="js/custom.js"></script>
     <!-- font Noto Serif -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+    <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    
 </head>
 
 <body>
     <header class="main-header">
-        <div class="container">
-            <section class="first-info" id="home">
-                <div class="social-media col-lg-3">
-                    <a target="blank" href="https://www.facebook.com/"><img src="img/facebook-icon.png"
-                            alt="facebook"></a>
-                    <a href="https://www.instagram.com/" target="blank"><img src="img/instagram-icon.png"
-                            alt="instagram"></a>
-                </div>
-                <div class="address col-lg-6">
-                    <p>Nowy Dwór Mazowiecki Mazowiecka 11/5</p>
-                </div>
-                <div class="phone col-lg-3">
-                    +22 45 789 66
-                </div>
-                <div class="line col-lg-12"></div>
-            </section>
 
-            <div class="row">
-                <div class="left-nav col-lg-6">
-                    <nav class="nav">
-                        <ul>
-                            <li><a href="#home nav-style">HOME</a></li>
-                            <li class="left-nav-content"><a href="#oferta">OFERTA</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="logo"><img src="img/logo-header.png" alt=""></div>
-                <div class="right-nav col-lg-6">
-                    <nav class="nav">
-                        <ul>
-                            <li class="right-nav-content"><a href="#contact">KONTAKT</a></li>
-                            <li class="right-nav-content"><a href="#o-nas">O NAS</a></li>
-                        </ul>
-                    </nav>
+        <section class="first-info hidden-xs hidden-sm" id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="social-media col-lg-3 col-md-3">
+                        <a target="blank" href="https://www.facebook.com/"><img src="img/facebook-icon.png"
+                                alt="facebook"></a>
+                        <a href="https://www.instagram.com/" target="blank"><img src="img/instagram-icon.png"
+                                alt="instagram"></a>
+                    </div>
+                    <div class="address col-lg-6 col-md-6">
+                        <p>Nowy Dwór Mazowiecki Mazowiecka 11/5</p>
+                    </div>
+                    <div class="phone col-lg-3 col-md-3">
+                        +22 45 789 66
+                    </div>
+                    <div class="line col-lg-12"></div>
                 </div>
             </div>
-        </div>
+        </section>
+        <div class="navSpaceHolder"></div>
+        <nav class="navbar navbar-default navbar-starter-theme">
+            <div class="navbar-header">
+                <!-- Logo - telefony -->
+                <a class="navbar-brand visible-xs" href="#">
+                    <img src="img/logo-small.png" alt="">
+                </a>
+                <!-- Przycisk do rozwiania menu - telefony -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <div class="left-nav col-lg-6 col-md-6 col-sm-6">
+
+                            <ul class="nav">
+                                <li><a href="#home">HOME</a></li>
+                                <li class="left-nav-content"><a href="#oferta">OFERTA</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="logo navbar-brand-no-mobile hidden-xs"><img src="img/logo-header.png" alt=""></div>
+                        <div class="right-nav col-lg-6 col-md-6 col-sm-6">
+
+                            <ul class="nav">
+                                <li class="right-nav-content"><a href="#contact">KONTAKT</a></li>
+                                <li class="right-nav-content"><a href="#o-nas">O NAS</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
     </header>
     <main>
         <div class="slider">
-            <div class="container">
-                <div class="slider-text col-lg-6">
-                    <p>Barber, do którego wrócisz!</p>
+            <div class="slider-box">
+                <div class="slider-item img-1"></div>
+                <div class="slider-item img-2"></div>
+                <div class="slider-item img-3"></div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="slider-content">
+                <div class="container relative">
+                    <div class="slider-text">
+                        <p>Barber, do którego wrócisz!</p>
+                    </div>
                 </div>
             </div>
         </div>
