@@ -16,14 +16,13 @@
     <link rel="stylesheet" href="css/slick.css">
     <script src="js/slick.min.js"></script>
     <!-- main css -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="js/custom.js"></script>
     <!-- font Noto Serif -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-
 </head>
 
 <body>
@@ -293,195 +292,27 @@
 
                         function initMap() {
                             var mapCenter = {
-                                lat: 52.4294476,
-                                lng: 20.7086908
+                                lat: 52.429720599999996,
+                                lng: 20.7084352
                             };
                             map = new google.maps.Map(document.getElementById('googlemap'), {
                                 zoom: 16,
                                 center: mapCenter,
                                 disableDefaultUI: true,
                                 styles: [{
-                                        "elementType": "labels",
-                                        "stylers": [{
-                                                "visibility": "off"
-                                            },
-                                            {
-                                                "color": "#f49f53"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "featureType": "landscape",
-                                        "stylers": [{
-                                                "color": "#f9ddc5"
-                                            },
-                                            {
-                                                "lightness": -7
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "featureType": "road",
-                                        "stylers": [{
-                                                "color": "#813033"
-                                            },
-                                            {
-                                                "lightness": 43
-                                            }
-                                        ]
-                                    },
-                                    {
                                         "featureType": "poi.business",
+                                        "elementType": "labels.icon",
                                         "stylers": [{
-                                                "color": "#645c20"
-                                            },
-                                            {
-                                                "lightness": 38
-                                            }
-                                        ]
+                                            "visibility": "on"
+                                        }]
                                     },
                                     {
-                                        "featureType": "water",
-                                        "stylers": [{
-                                                "color": "#1994bf"
-                                            },
-                                            {
-                                                "saturation": -69
-                                            },
-                                            {
-                                                "gamma": 0.99
-                                            },
-                                            {
-                                                "lightness": 43
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "featureType": "road.local",
-                                        "elementType": "geometry.fill",
-                                        "stylers": [{
-                                                "color": "#f19f53"
-                                            },
-                                            {
-                                                "weight": 1.3
-                                            },
-                                            {
-                                                "visibility": "on"
-                                            },
-                                            {
-                                                "lightness": 16
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "featureType": "poi.business"
-                                    },
-                                    {
-                                        "featureType": "poi.park",
-                                        "stylers": [{
-                                                "color": "#645c20"
-                                            },
-                                            {
-                                                "lightness": 39
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "featureType": "poi.school",
-                                        "stylers": [{
-                                                "color": "#a95521"
-                                            },
-                                            {
-                                                "lightness": 35
-                                            }
-                                        ]
-                                    },
-                                    {},
-                                    {
-                                        "featureType": "poi.medical",
-                                        "elementType": "geometry.fill",
-                                        "stylers": [{
-                                                "color": "#813033"
-                                            },
-                                            {
-                                                "lightness": 38
-                                            },
-                                            {
-                                                "visibility": "off"
-                                            }
-                                        ]
-                                    },
-                                    {},
-                                    {},
-                                    {},
-                                    {},
-                                    {},
-                                    {},
-                                    {},
-                                    {},
-                                    {},
-                                    {},
-                                    {},
-                                    {
-                                        "elementType": "labels"
-                                    },
-                                    {
-                                        "featureType": "poi.sports_complex",
-                                        "stylers": [{
-                                                "color": "#9e5916"
-                                            },
-                                            {
-                                                "lightness": 32
-                                            }
-                                        ]
-                                    },
-                                    {},
-                                    {
-                                        "featureType": "poi.government",
-                                        "stylers": [{
-                                                "color": "#9e5916"
-                                            },
-                                            {
-                                                "lightness": 46
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "featureType": "transit.station",
+                                        "featureType": "transit.station.bus",
+                                        "elementType": "labels.icon",
                                         "stylers": [{
                                             "visibility": "off"
                                         }]
-                                    },
-                                    {
-                                        "featureType": "transit.line",
-                                        "stylers": [{
-                                                "color": "#813033"
-                                            },
-                                            {
-                                                "lightness": 22
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "featureType": "transit",
-                                        "stylers": [{
-                                            "lightness": 38
-                                        }]
-                                    },
-                                    {
-                                        "featureType": "road.local",
-                                        "elementType": "geometry.stroke",
-                                        "stylers": [{
-                                                "color": "#f19f53"
-                                            },
-                                            {
-                                                "lightness": -10
-                                            }
-                                        ]
-                                    },
-                                    {},
-                                    {},
-                                    {}
+                                    }
                                 ]
                             });
 
@@ -506,7 +337,7 @@
                             };
 
                             // znacznik
-                            addLocationMarker('nazwa_znacznika', 52.4294476, 20.7086908);
+                            addLocationMarker('nazwa_znacznika', 52.429720599999996, 20.7084352);
                         }
                     </script>
 
@@ -545,7 +376,7 @@
                     <div class="barber-address col-lg-4 col-md-4 col-sm-4">
                         <div class="txt col-lg-12">
                             <h3 class="col-lg-12">Barber Shop Gander</h3>
-                            <p class="col-lg-12">Nowy Dwór Mazowiecki</p>
+                            <p class="col-lg-12 kl">Nowy Dwór Mazowiecki</p>
                             <p class="col-lg-12">Mazowiecka 11/5</p>
                             <p class="col-lg-12">+22 45 789 66</p>
                             <p class="col-lg-12">ganderbarber@gmail.com</p>
@@ -558,8 +389,9 @@
                             <p class="col-lg-12">Poniedziałek-Piątek</p>
                             <p class="col-lg-12">8:00-18:00</p>
                             <p class="col-lg-12">Sobota</p>
+                            <p class="col-lg-12">10:00-16:00</p>
                         </div>
-                        <p class="col-lg-12">10:00-16:00</p>
+
                     </div>
                     <div class="colabo col-lg-4 col-md-4 col-sm-4"">
                     <h3 class=" col-lg-12">Współpracujemy z:</h3>
